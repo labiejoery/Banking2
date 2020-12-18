@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Banking.Models
 {
-    class BankAccount
+    public class BankAccount
     {
         #region fields
         private readonly IList<Transaction> _transactions = new List<Transaction>();
