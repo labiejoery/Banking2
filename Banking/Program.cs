@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Banking.Models;
+using System;
 
 namespace Banking
 {
@@ -6,7 +7,10 @@ namespace Banking
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BankAccount bankapp = new BankAccount("123-abc") { Balance = 200M };
+            Console.WriteLine(bankapp.Balance);
+            bankapp.Deposit(500M);
+            Console.WriteLine(bankapp.Balance);
         }
     }
 }
